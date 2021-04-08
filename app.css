@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  position: relative;
+  width: 280px;
+  height: 500px;
+  padding: 2rem;
+  text-align: left;
+}
+
+.btn {
+  position: absolute;
+  padding: 1rem 2rem;
+  margin: 3rem 0;
+  margin-top: 5rem;
+  left: 3rem;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-sedan {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-suv {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-luxury {
+  color: hsl(179, 100%, 13%);
+}
+
+.card img {
+  padding: 1rem;
+}
+
+.card h1 {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.card p {
+  font-family: "Lexen Deca", sans-serif;
+  color: #fff;
+  line-height: 1.7;
+  padding: 1rem;
+}
+
+.card-1 {
+  background: hsl(31, 77%, 52%);
+  border-radius: 5% 0 0 5%;
+  flex-shrink: 0;
+}
+
+.card-2 {
+  background: hsl(184, 100%, 22%);
+  flex-shrink: 0;
+}
+
+.card-3 {
+  background: hsl(179, 100%, 13%);
+  border-radius: 0 5% 5% 0;
+  flex-shrink: 0;
+}
+@media (max-width: 840px) {
+  .container {
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+
+  .card {
+    width: 300px;
+    height: 500px;
+  }
+
+  .btn {
+    position: absolute;
+    padding: 1rem 2rem;
+    margin: 3rem 0;
+    margin-top: 1rem;
+    left: 3rem;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 20px;
+  }
+  .card-1 {
+    background: hsl(31, 77%, 52%);
+    border-radius: 5% 5% 0 0;
+  }
+
+  .card-2 {
+    background: hsl(184, 100%, 22%);
+  }
+
+  .card-3 {
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 0 5% 5%;
+  }
+}
